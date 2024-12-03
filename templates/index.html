@@ -5,160 +5,345 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Career Hub</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../static/styles.css">
+  <link rel="stylesheet" href="../static/index.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+  </style>
 </head>
 <body>
 
 <!-- nav -->
 <nav class="navbar navbar-expand sticky-top custom-navbar"> 
     <a class="navbar-brand" href="index.html">
-        <img src="" alt="Prospera" width="80" height="64">
+        <img src="../images/logo.png" alt="Prospera" width="80" height="64">
     </a>
     <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="">Home</a>
-        <a class="nav-item nav-link" href="">Matches</a>
-        <a class="nav-item nav-link" href="">Inbox</a>
+        <a class="nav-item nav-link active" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="matches.html" data-bs-toggle="tooltip" title="View your matches">Matches <span class="badge bg-danger">15</span></a>
+        <a class="nav-item nav-link" href="inbox.html" data-bs-toggle="tooltip" title="View your inbox">Inbox <span class="badge bg-danger">3</span></a>
     </div>
     <div class="ms-auto d-flex align-items-center"> 
         <form class="d-flex me-3" role="search">
-            <input class="form-control me-2 custom-search" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn" type="submit">Search</button>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search by role, company..." aria-label="Search">
+                <button class="btn custom-btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown">Filter</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Remote</a></li>
+                    <li><a class="dropdown-item" href="#">Part-Time</a></li>
+                    <li><a class="dropdown-item" href="#">Full-Time</a></li>
+                </ul>
+                <button class="btn custom-btn" type="submit">Search</button>
+            </div>
         </form>
-        <a href="#" class="btn">Login</a>
+        
+        <a href="#" class="btn">Profile</a>
     </div>
 </nav>
 
 <!-- welcome msg -->
 <div class="yellow-section">
-  <div class="text-center">
-    <h1 class="fw-bold">Welcome, [Name]!</h1>
-  </div>
-
-  <!-- grid layout -->
-  <div class="container my-5">
+    <div class="text-center">
+      <h1 class="fw-bold">Welcome, [Name]!</h1>
+    </div>
+  
+<!-- progress tracker -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Your Job Search Progress</h2>
+    <div class="d-flex justify-content-between mb-4">
+      <div class="step-item text-center">
+        <div class="step-icon bg-success text-white rounded-circle mx-auto mb-2">
+          <i class="bi bi-check-lg"></i> 
+        </div>
+        <h5>Resume Updated</h5>
+        <p><small>Completed</small></p>
+      </div>
+      <div class="step-item text-center">
+        <div class="step-icon bg-warning text-white rounded-circle mx-auto mb-2">
+          <i class="bi bi-arrow-right-circle"></i> 
+        </div>
+        <h5>Job Applications</h5>
+        <p><small>In Progress</small></p>
+      </div>
+      <div class="step-item text-center">
+        <div class="step-icon bg-secondary text-white rounded-circle mx-auto mb-2">
+          <i class="bi bi-hourglass"></i> 
+        </div>
+        <h5>Interview Prep</h5>
+        <p><small>Not Started</small></p>
+      </div>
+    </div>
+  </div>  
+  
+      <!-- progress bar -->
+      <div class="progress-container"> 
+        <div class="progress mb-4" style="height: 30px;">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            50% Complete
+          </div>
+        </div>
+      </div>
+  
+<!-- grid layout -->
+<div class="container my-5">
     <div class="row g-4">
-
       <!-- individual boxes -->
       <div class="col-lg-3 col-md-6 grid-box matches">
         <div class="card bg-dark text-white h-100">
           <div class="card-body">
-            <h5 class="card-title">All Matches</h5>
-            <p class="card-text">15 Total Matches</p>
-            <small>7 to review</small>
+            <i class="fa fa-bullseye box-logo"></i> 
+            <h5 class="card-title">All<br>Matches</h5>
+            <p class="job-count">15 Jobs</p> 
           </div>
         </div>
       </div>
-
       <div class="col-lg-3 col-md-6 grid-box fully-remote">
         <div class="card bg-dark text-white text-center h-100">
           <div class="card-body">
-            <h5 class="card-title">Fully Remote</h5>
+            <i class="fa fa-globe box-logo"></i>
+            <h5 class="card-title">Fully<br>Remote</h5>
+            <p class="job-count">10 Jobs</p> 
           </div>
         </div>
       </div>
-
       <div class="col-lg-3 col-md-6 grid-box fast-track">
         <div class="card bg-dark text-white text-center h-100">
           <div class="card-body">
-            <h5 class="card-title">Fast Track</h5>
+            <i class="fa fa-tachometer box-logo"></i> 
+            <h5 class="card-title">Fast<br>Track</h5>
+            <p class="job-count">5 Jobs</p>
           </div>
         </div>
       </div>
-
       <div class="col-lg-3 col-md-6 grid-box led-by-women">
         <div class="card bg-dark text-white text-center h-100">
           <div class="card-body">
-            <h5 class="card-title">Led By Women</h5>
+            <i class="fa fa-female box-logo"></i> 
+            <h5 class="card-title">Led By<br>Women</h5>
+            <p class="job-count">8 Jobs</p>
           </div>
         </div>
       </div>
-
       <div class="col-lg-6 col-md-12 grid-box jobs-this-week">
         <div class="card bg-dark text-white text-center h-100">
           <div class="card-body">
+            <i class="fa fa-calendar box-logo"></i>
             <h5 class="card-title">Jobs Added This Week</h5>
+            <p class="job-count">20 Jobs</p> 
           </div>
         </div>
       </div>
-
       <div class="col-lg-3 col-md-6 grid-box tech-for-good">
         <div class="card bg-dark text-white text-center h-100">
           <div class="card-body">
+            <i class="fa fa-heart box-logo"></i>
             <h5 class="card-title">Tech for Good</h5>
+            <p class="job-count">12 Jobs</p> 
           </div>
         </div>
       </div>
-
       <div class="col-lg-3 col-md-6 grid-box jobs-with-salaries">
         <div class="card bg-dark text-white text-center h-100">
           <div class="card-body">
+            <i class="fa fa-dollar-sign box-logo"></i> 
             <h5 class="card-title">Jobs With Salaries</h5>
+            <p class="job-count">9 Jobs</p> 
           </div>
         </div>
       </div>
-
       <div class="col-lg-6 col-md-12 grid-box global-opportunities">
         <div class="card bg-dark text-white text-center h-100">
           <div class="card-body">
-            <h5 class="card-title">Global Opportunities</h5>
+            <i class="fa fa-globe-europe box-logo"></i>
+            <h5 class="card-title">Global<br>Opportunities</h5>
+            <p class="job-count">15 Jobs</p> 
           </div>
         </div>
       </div>
-
       <div class="col-lg-2 col-md-4 grid-box top-employers">
         <div class="card bg-dark text-white text-center h-100">
           <div class="card-body">
+            <i class="fa fa-briefcase box-logo"></i> 
             <h5 class="card-title">Top Employers</h5>
+            <p class="job-count">6 Jobs</p>
           </div>
         </div>
       </div>
-
       <div class="col-lg-2 col-md-4 grid-box dei-forward">
         <div class="card bg-dark text-white text-center h-100">
           <div class="card-body">
-            <h5 class="card-title">D.E.I Forward</h5>
+            <i class="fa fa-handshake box-logo"></i> 
+            <h5 class="card-title">D.E.I.<br>Forward</h5>
+            <p class="job-count">3 Jobs</p>
           </div>
         </div>
       </div>
-
       <div class="col-lg-2 col-md-4 grid-box flexible-opportunities">
         <div class="card bg-dark text-white text-center h-100">
           <div class="card-body">
+            <i class="fa fa-exchange-alt box-logo"></i> 
             <h5 class="card-title">Flexible Opportunities</h5>
+            <p class="job-count">10 Jobs</p> 
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>
 
-<!-- saved/viewed/applied -->
+<section class="job-activity">
+  <div class="container">
+    <h2 class="text-center mb-4">Your Job Activity</h2>
+    <div class="accordion" id="jobActivityAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#savedJobs">
+            <i class="bi bi-bookmark-heart me-2"></i> Saved Jobs
+          </button>
+        </h2>
+        <div id="savedJobs" class="accordion-collapse collapse" data-bs-parent="#jobActivityAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Software Engineer at TechCorp <small>(Saved on 2023-11-22)</small></li>
+              <li>Data Analyst at DataMine Inc. <small>(Saved on 2023-11-20)</small></li>
+              <li>UX Designer at DesignLab <small>(Saved on 2023-11-19)</small></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#appliedJobs">
+            <i class="bi bi-send-check me-2"></i> Applied Jobs
+          </button>
+        </h2>
+        <div id="appliedJobs" class="accordion-collapse collapse" data-bs-parent="#jobActivityAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Frontend Developer at WebDevCo <small>(Applied on 2023-11-25)</small></li>
+              <li>Backend Engineer at ServerSide Inc. <small>(Applied on 2023-11-24)</small></li>
+              <li>Full Stack Developer at AllAroundDev <small>(Applied on 2023-11-23)</small></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#viewedJobs">
+            <i class="bi bi-eye me-2"></i> Viewed Jobs
+          </button>
+        </h2>
+        <div id="viewedJobs" class="accordion-collapse collapse" data-bs-parent="#jobActivityAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li>Product Manager at AgileCorp <small>(Viewed on 2023-11-26)</small></li>
+              <li>Project Manager at ProjectPros <small>(Viewed on 2023-11-25)</small></li>
+              <li>Marketing Manager at MarketMasters <small>(Viewed on 2023-11-24)</small></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- live job feed -->
 <div class="container my-5">
-  <div class="row g-4">
-    <div class="col-md-4 grid-box saved">
-      <div class="card bg-light text-center h-100">
-        <div class="card-body">
-          <h5 class="card-title">Saved</h5>
+    <h2 class="text-center mb-4">Live Job Listings</h2>
+    <div id="liveJobFeed" class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">
+        <h5 class="mb-1">Developer</h5>
+        <p class="mb-1">Company: TechCorp<br>Location: Remote (USA)</p>
+        <small>Posted 2 hours ago</small>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <h5 class="mb-1">Data Scientist</h5>
+        <p class="mb-1">Company: DataLabs<br>Location: San Francisco, CA</p>
+        <small>Posted 3 hours ago</small>
+      </a>
+    </div>
+  </div>
+
+<!-- job opps map section -->
+<div class="container my-5">
+    <h2 class="text-center">Explore Job Opportunities by Location</h2>
+    <div id="map" style="height: 500px;"></div>
+</div>
+
+<!-- leaflet.js lib -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<script>
+  var map = L.map('map').setView([51.505, -0.09], 2); // default to world view
+
+  // add OpenStreetMap tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  var jobs = [
+    {"location": [51.505, -0.09], "title": "3 Jobs in London"},
+    {"location": [40.7128, -74.0060], "title": "7 Jobs in New York"},
+    {"location": [34.0522, -118.2437], "title": "2 Jobs in Los Angeles"}
+  ];
+
+  jobs.forEach(function(job) {
+    L.marker(job.location).addTo(map)
+      .bindPopup('<b>' + job.title + '</b>');
+  });
+</script>
+
+<!-- advice feed -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Career Tips & Advice</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="advice-box">
+          <img src="../images/advice-1.png" alt="Resume" class="advice-img">
+          <div class="advice-content">
+            <h5 class="advice-title">How to Nail Your Resume</h5>
+            <p class="advice-text">Learn how to create a resume that<br>gets noticed by employers.</p>
+            <a href="#" class="advice-btn">Read More</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4 grid-box applied">
-      <div class="card bg-light text-center h-100">
-        <div class="card-body">
-          <h5 class="card-title">Applied</h5>
+      <div class="col-md-4">
+        <div class="advice-box">
+          <img src="../images/advice-2.png" alt="Interview" class="advice-img">
+          <div class="advice-content">
+            <h5 class="advice-title">Interview Tips for Success</h5>
+            <p class="advice-text">Master the interview process with<br>these expert tips.</p>
+            <a href="#" class="advice-btn">Read More</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4 grid-box viewed">
-      <div class="card bg-light text-center h-100">
-        <div class="card-body">
-          <h5 class="card-title">Viewed</h5>
+      <div class="col-md-4">
+        <div class="advice-box">
+          <img src="../images/advice-3.png" alt="Networking" class="advice-img">
+          <div class="advice-content">
+            <h5 class="advice-title">Networking Like a Pro</h5>
+            <p class="advice-text">Discover how networking can open doors<br>to new job opportunities.</p>
+            <a href="#" class="advice-btn">Read More</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+  
+
+<footer class="footer">
+    <div class="container text-center">
+        <div class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+        <p class="mt-3">&copy; 2024 Prospera. All Rights Reserved.</p>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
