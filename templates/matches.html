@@ -103,7 +103,8 @@
               <div class="card">
                 <h5 class="card-header">Insights</h5>
                 <div class="card-body">
-                  <p>{{ jobInsights }}</p>
+                  <li>{{ jobInsights1 }}</li>
+                  <li>{{ jobInsights2 }}</li>
                 </div>
               </div>
             </div>
@@ -144,7 +145,7 @@
             </div>
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header">Office & Media</h5>
+                <h5 class="card-header">Headquarters</h5>
                 <div class="card-body">
                   <p>{{ companyHeadquarters }}</p>
                 </div>
@@ -156,8 +157,8 @@
     </div>
   </div>
 
-  <div class="sticky-bottom">
-    <div class="button-group">
+  <div class="skip-match"> 
+    <div class="button-group"> 
       <button class="skip-btn" id="skip-btn">
         <i class="fas fa-ban"></i> Skip
       </button>
@@ -172,7 +173,6 @@
       <span><img src="../images/m.png" alt="M Key" class="key-image"> Match</span>
     </div>
   </div>
-  
   
   <script>
     let matchIndex = 2;
@@ -211,15 +211,42 @@
         skills: ["React", "JavaScript"],
         level: "Junior and Mid level",
         location: "Remote in Canada",
-        slogan: "The world’s leading exchange for digital currencies.",
+        slogan: "Leading exchange for digital currencies.",
         employees: "1001+ employees",
         industry: ["Fintech", "B2C", "SaaS"],
         open: "Open for applications",
-        role: ["You're optimistic about the future", "You're a pro in NFTs and DAOs"],
-        insights: ["Some candidates hear back within 2 weeks"],
-        benefits: ["12 weeks maternity/paternity leave", "Vision and dental care"],
-        mission: "Our mission is to simplify the world of finance for everyone.",
-        stats: ["1001+ employees", "Founded in 2012"],
+        role: [
+        "You're optimistic about the future of digital currencies.",
+        "You're a pro in bleeding-edge tech like NFTs and DAOs.",
+        "You have a strong understanding of frontend frameworks like React.",
+        "You're passionate about building user-friendly and accessible interfaces.",
+        "You have experience with testing and debugging frontend applications.",
+        "You're a team player with excellent communication skills."
+        ],
+        insights: [
+        "Candidates hear back within 2 weeks.",
+        "The interview process typically includes a technical assessment.",
+        "Coinbase values a strong understanding of cryptocurrency concepts.",
+        "Be prepared to discuss your experience with building scalable applications.",
+        "Showcasing your passion for the blockchain industry is a plus.",
+        "Highlight your contributions to open-source projects, if applicable."
+        ],
+        benefits: [
+        "12 weeks maternity/paternity leave",
+        "Vision and dental care",
+        "Comprehensive health insurance",
+        "Generous stock options",
+        "Commuter benefits",
+        "401(k) matching"
+        ],
+        mission: "Our mission is to simplify the world of finance for everyone and increase economic freedom around the world.", 
+        stats: [
+        "1001+ employees",
+        "Founded in 2012",
+        "Valued at over $8 billion as of 2023, expected to rise",
+        "Trusted by an increasing millions of users globally",
+        "Offers a variety of cryptocurrency products and services"
+        ],        
         office: "Headquarters in San Francisco, CA",
         link: "https://www.coinbase.com/en-ca/"
       },
@@ -235,11 +262,38 @@
         employees: "114,096 employees",
         industry: ["Tech", "AI", "Cloud"],
         open: "Open for applications",
-        role: ["You're passionate about development", "You thrive in a collaborative environment"],
-        insights: ["Some candidates hear back within 1 week"],
-        benefits: ["20 weeks maternity/paternity leave", "Health and dental care"],
-        mission: "Organize the world’s information and make it universally accessible and useful.",
-        stats: ["114,096 employees", "Founded in 1998"],
+        role: [
+        "You're passionate about developing scalable and reliable backend systems.",
+        "You thrive in collaboration and enjoy working with a team.",
+        "You have experience with cloud platforms like GCP.",
+        "You can tackle complex technical challenges.",
+        "You're proficient in 1+ backend programming language(s) like Python or Java.",
+        "You have a good understanding of database design and management."
+        ],
+        insights: [
+        "Candidates hear back within 1 week.",
+        "Google's interview process is known algorithmic problem-solving.",
+        "Be prepared to discuss your experience with system design and architecture.",
+        "Highlight your contributions to large-scale projects or open-source initiatives.",
+        "Demonstrate your ability to learn and adapt to new technologies quickly.",
+        "Showcasing your passion for Google's products is beneficial."
+        ],
+        benefits: [
+        "20 weeks maternity/paternity leave",
+        "Health and dental care",
+        "On-site fitness centers and wellness programs",
+        "Generous employee discounts on Google products",
+        "Tuition reimbursement for continuing education",
+        "Opportunities for career growth and development"
+        ],
+        mission: "Google's mission is to organize the world’s information and make it universally accessible and useful.",
+        stats: [
+        "114,096 employees",
+        "Founded in 1998",
+        "One of the most valuable companies in the world",
+        "Leader in search, advertising, and cloud computing",
+        "Known for its innovative culture and cutting-edge technologies"
+        ],        
         office: "Headquarters in Mountain View, CA",
         link: "https://www.google.com/"
       },
@@ -255,11 +309,38 @@
         employees: "147,000 employees",
         industry: ["Tech", "Design"],
         open: "Open for applications",
-        role: ["You have a keen eye for design", "You create user-friendly interfaces"],
-        insights: ["Some candidates hear back within 3 weeks"],
-        benefits: ["18 weeks maternity/paternity leave", "Vision and dental care"],
-        mission: "Bring the best UX to its customers through innovative hardware, software, and services.",
-        stats: ["147,000 employees", "Founded in 1976"],
+        role: [
+        "You have a passion for creating intuitive user experiences.",
+        "You're proficient in design tools like Figma and Adobe Creative Suite.",
+        "You have experience with user research and usability testing.",
+        "You're able to translate user and business needs into elegant design solutions.",
+        "You have a strong understanding of design principles and best practices.",
+        "You're a team player with excellent communication skills."
+        ],
+        insights: [
+        "Candidates hear back within 3 weeks.",
+        "Apple's interview process may include a portfolio review and design challenge.",
+        "Be prepared to discuss your design process.",
+        "Highlight your experience with designing for different platforms.",
+        "Showcasing your passion for Apple's design philosophy is a plus.",
+        "Demonstrate your understanding of accessibile and inclusive design."
+        ],
+        benefits: [
+        "18 weeks maternity/paternity leave",
+        "Vision and dental care",
+        "Comprehensive health insurance with wellness programs",
+        "Stock purchase plan and employee discounts",
+        "On-site childcare and fitness centers",
+        "Tuition reimbursement for continuing education"
+        ],
+        mission: "Apple's mission is to bring the best user experience to its customers through its innovative hardware, software, and services.",   
+        stats: [
+        "147,000 employees",
+        "Founded in 1976",
+        "One of the most valuable brands in the world",
+        "Known for its iconic products and design aesthetic",
+        "Leader in consumer electronics, software, and online services"
+        ],       
         office: "Headquarters in Cupertino, CA",
         link: "https://www.apple.com/"
       },
@@ -275,11 +356,38 @@
         employees: "44,942 employees",
         industry: ["Tech", "Social Media"],
         open: "Open for applications",
-        role: ["You are skilled in data analysis", "You enjoy solving complex problems"],
-        insights: ["Some candidates hear back within 4 weeks"],
-        benefits: ["16 weeks maternity/paternity leave", "Health and dental care"],
-        mission: "Give people the power to build community and bring the world closer together.",
-        stats: ["44,942 employees", "Founded in 2004"],
+        role: [
+        "You have experience with statistical modeling techniques.",
+        "You can extract insights from large datasets.",
+        "You're proficient in programming languages like Python or R.",
+        "You have experience with data visualization tools and techniques.",
+        "You're able to communicate to both technical and non-technical audiences.",
+        "You're a team player with a strong work ethic and a passion for data."
+        ],
+        insights: [
+        "Candidates hear back within 4 weeks.",
+        "Meta's interview process may include a technical task and a case study.",
+        "Be prepared to discuss your experience with machine learning and data mining.",
+        "Highlight your contributions to data-driven projects or research initiatives.",
+        "Demonstrate your ability to work with diverse datasets and real-world problems.",
+        "Showcasing your passion for Meta's products and mission is beneficial."
+        ],
+        benefits: [
+        "16 weeks maternity/paternity leave",
+        "Health and dental care",
+        "Competitive salaries and stock options",
+        "On-site restaurants and cafes",
+        "Transportation and commuter benefits",
+        "Opportunities for professional development and growth"
+        ],
+        mission: "Meta's mission is to give people the power to build community and bring the world closer together.",
+        stats: [
+        "44,942 employees",
+        "Founded in 2004",
+        "Parent company of Facebook, Instagram, and WhatsApp",
+        "Leader in social media and online advertising",
+        "Investing heavily in virtual reality and the metaverse"
+        ],        
         office: "Headquarters in Menlo Park, CA",
         link: "https://www.facebook.com/"
       },
@@ -295,11 +403,38 @@
         employees: "1,298,000 employees",
         industry: ["E-commerce", "Cloud"],
         open: "Open for applications",
-        role: ["You have a strategic mindset", "You excel in digital marketing"],
-        insights: ["Some candidates hear back within 2 weeks"],
-        benefits: ["14 weeks maternity/paternity leave", "Health and dental care"],
-        mission: "To be Earth’s most customer-centric company, where customers can find anything online.",
-        stats: ["1,298,000 employees", "Founded in 1994"],
+        role: [
+        "You have a strategic mindset and can develop marketing campaigns.",
+        "You have experience with SEO, SEM, and social media marketing.",
+        "You're able to analyze data and track key performance indicators (KPIs).",
+        "You have excellent communication and presentation skills.",
+        "You're a creative thinker with a passion for marketing.",
+        "You're a team player with leadership and project management skills."
+        ],
+        insights: [
+        "Candidates hear back within 2 weeks.",
+        "Amazon's interview process is known for its behavioral questions.",
+        "Be prepared to discuss your experience with managing teams and budgets.",
+        "Highlight your successes in driving customer acquisition.",
+        "Demonstrate your understanding of e-commerce and marketing trends.",
+        "Showcasing your analytical skills and informed decision-making is important."
+        ],
+        benefits: [
+        "14 weeks maternity/paternity leave",
+        "Health and dental care",
+        "Competitive salaries and stock options",
+        "Employee discount on Amazon products",
+        "Career development programs and training opportunities",
+        "On-site amenities and employee assistance programs"
+        ],
+        mission: "Amazon's mission is to be Earth’s most customer-centric company, where customers can find and discover anything they might want to buy online.",
+        stats: [
+        "1,298,000 employees",
+        "Founded in 1994",
+        "Largest online retailer, known for its fast shipping",
+        "Global leader in cloud computing and e-commerce",
+        "Expanding into new markets like healthcare and grocery"
+        ],        
         office: "Headquarters in Seattle, WA",
         link: "https://www.amazon.com/"
       }
@@ -328,7 +463,7 @@
       `;
   
       document.querySelector("#job-tab .row .col-md-4:nth-child(1) .card-body ul").innerHTML = job.role.map(role => `<li>${role}</li>`).join('');
-      document.querySelector("#job-tab .row .col-md-4:nth-child(2) .card-body").innerHTML = job.insights.join('<br>');
+      document.querySelector("#job-tab .row .col-md-4:nth-child(2) .card-body").innerHTML = `<ul>${job.insights.map(insights => `<li>${insights}</li>`).join('')}</ul>`;
       document.querySelector("#job-tab .row .col-md-4:nth-child(3) .card-body ul").innerHTML = job.benefits.map(benefit => `<li>${benefit}</li>`).join('');
       document.querySelector("#company-tab .row .col-md-4:nth-child(1) .card-body").innerHTML = job.mission;
       document.querySelector("#company-tab .row .col-md-4:nth-child(2) .card-body ul").innerHTML = job.stats.map(stat => `<li>${stat}</li>`).join('');
@@ -369,6 +504,18 @@
   
     updateJob();
   </script>
+
+<footer class="footer">
+    <div class="container text-center">
+        <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="#" class="footer-link">Contact</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+        </div>
+        <p class="mt-3">&copy; 2024 Prospera. All Rights Reserved.</p>
+    </div>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

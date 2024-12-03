@@ -67,7 +67,7 @@ a.btn {
 .custom-btn-outline:hover,
 a.btn:hover {
     color: #000000; 
-    transform: translateY(-0.3125rem); 
+    transform: translateY(-0.1rem); 
 }
 
 .custom-navbar .navbar-nav .nav-link.active {
