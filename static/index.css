@@ -92,10 +92,6 @@ a.btn:hover {
     transform: translateY(-0.125rem);
 }
 
-a.btn {
-    font-weight: 500;
-}
-
 .custom-navbar .navbar-nav .nav-link[href="index.html"],
 .custom-navbar .navbar-nav .nav-link[href="matches.html"],
 .custom-navbar .navbar-nav .nav-link[href="inbox.html"] {
