@@ -1,5 +1,5 @@
 .yellow-section {
-    background-color: #FFD400;
+    background: linear-gradient(135deg, #FFD400, #FFB800);
     padding: 1.25rem;
 }
 
@@ -10,7 +10,11 @@
 }
 
 body {
-    font-family: "Space Grotesk", sans-serif; 
+    font-family: "Figtree", sans-serif;
+    background-image: url("../images/bg-2.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
@@ -22,6 +26,7 @@ body {
 .custom-navbar {
     background: linear-gradient(to right, rgba(45, 83, 111, 0.6), rgba(255, 226, 80, 0.894));
     border-radius: 1.25rem;
+    font-family: "Space Grotesk", sans-serif; 
     padding: 1rem 2rem;
     margin: 1.25rem;
     box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.3);
@@ -34,6 +39,10 @@ body {
     top: 0;
     z-index: 1050;
     opacity: 0.95;
+}
+
+.custom-navbar .form-control {
+    font-size: 0.8rem; 
 }
 
 .custom-navbar .navbar-brand img {
@@ -81,6 +90,22 @@ a.btn:hover {
 .custom-navbar .navbar-nav .nav-link .badge:hover {
     background-color: #4e7da2; 
     transform: translateY(-0.125rem);
+}
+
+a.btn {
+    font-weight: 500;
+}
+
+.custom-navbar .navbar-nav .nav-link[href="index.html"],
+.custom-navbar .navbar-nav .nav-link[href="matches.html"],
+.custom-navbar .navbar-nav .nav-link[href="inbox.html"] {
+    color: #fff; 
+}
+
+.custom-navbar .navbar-nav .nav-link[href="index.html"]:hover,
+.custom-navbar .navbar-nav .nav-link[href="matches.html"]:hover,
+.custom-navbar .navbar-nav .nav-link[href="inbox.html"]:hover {
+    color: #000;  
 }
 
 a.btn {
