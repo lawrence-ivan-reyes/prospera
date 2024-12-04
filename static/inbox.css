@@ -206,8 +206,6 @@ body {
     background: rgba(45, 83, 111, 0.6);
     color: white;
     padding: 1rem;
-    text-align: center;
-    font-family: "Space Grotesk", sans-serif;
     margin: 0;
 }
 
@@ -215,6 +213,12 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.tab-content h3 {
+    font-size: 1.5rem;
+    padding-top: 0.3rem;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .conversation {

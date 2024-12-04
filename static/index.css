@@ -403,6 +403,7 @@ h2.text-center {
     font-size: 0.9rem;
     font-weight: 300;
     color: #95a5a6;
+    margin-right: 4.5rem;
 }
 
 #liveJobFeed .list-group-item .badge {
