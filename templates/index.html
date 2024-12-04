@@ -17,14 +17,19 @@
 
 <!-- nav -->
 <nav class="navbar navbar-expand sticky-top custom-navbar"> 
-    <a class="navbar-brand" href="index.html">
-        <img src="../static/images/logo.png" alt="Prospera" width="80" height="64">
-    </a>
+    <a class="navbar-brand" href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Prospera" width="80" height="64">
+    </a>    
     <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="index.html">Home</a>
-        <a class="nav-item nav-link" href="matches.html" data-bs-toggle="tooltip" title="View your matches">Matches <span class="badge bg-danger">5</span></a>
-        <a class="nav-item nav-link" href="inbox.html" data-bs-toggle="tooltip" title="View your inbox">Inbox <span class="badge bg-danger">2</span></a>
+        <a class="nav-item nav-link active" href="{{ url_for('index') }}">Home</a>
+        <a class="nav-item nav-link" href="{{ url_for('matches') }}" data-bs-toggle="tooltip" title="View your matches">
+            Matches <span class="badge bg-danger">5</span>
+        </a>
+        <a class="nav-item nav-link" href="{{ url_for('inbox') }}" data-bs-toggle="tooltip" title="View your inbox">
+            Inbox <span class="badge bg-danger">2</span>
+        </a>
     </div>
+    
     <div class="ms-auto d-flex align-items-center"> 
         <form class="d-flex me-3" role="search">
             <div class="input-group">
