@@ -2,15 +2,15 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
+def home():
     return render_template("index.html")
 
 @app.route('/matches')
-def hello_world():
+def matches():
     return render_template("matches.html")
 
 @app.route('/inbox')
-def hello_world():
+def inbox():
     return render_template("inbox.html")
 
 if __name__ == '__main__':
