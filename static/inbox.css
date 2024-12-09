@@ -10,6 +10,7 @@ body {
     max-width: 75rem;
     width: 100%;
     gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .content-wrapper { 
@@ -442,7 +443,7 @@ body {
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
 }
 
 .quick-actions-notifications p {
@@ -451,9 +452,9 @@ body {
 }
 
 .quick-actions h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
     color: #2d536f;
 }
 
@@ -464,7 +465,7 @@ body {
     border: none;
     padding: 1rem 1.5rem;
     border-radius: 1.25rem;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 500;
     text-align: center;
     transition: background 0.5s ease, transform 0.3s;
