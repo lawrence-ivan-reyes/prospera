@@ -1,6 +1,6 @@
 body {
     font-family: "Figtree", sans-serif;
-    background-image: url("../images/bg-2.png");
+    background-image: url("../static/images/bg-2.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
