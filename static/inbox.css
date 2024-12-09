@@ -428,4 +428,60 @@ body {
     margin-top: 1.5rem;
 }
 
-  
+.quick-actions-notifications {
+    color: rgb(31, 31, 31);
+    border-radius: 1.25rem;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Figtree', sans-serif;
+    transition: background 0.5s ease, box-shadow 0.5s ease;
+}
+
+.quick-actions-notifications h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.quick-actions-notifications p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.quick-actions h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #2d536f;
+}
+
+.quick-action-btn,
+.quick-actions-buttons .quick-action-btn {
+    background: linear-gradient(135deg, #2d536f, #1e3a50);
+    color: rgb(232, 232, 232); 
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+    transition: background 0.5s ease, transform 0.3s;
+}
+
+.quick-actions-buttons .quick-action-btn:hover {
+    background: linear-gradient(135deg, #1e3a50, #2d536f);
+    color: rgb(232, 232, 232);
+    transform: translateY(-0.2rem);
+}
+
+.quick-actions-buttons .quick-action-btn:active {
+    background: linear-gradient(135deg, #172c3f, #1e3a50);
+}
+
+
+
+
+
+
