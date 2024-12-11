@@ -196,25 +196,24 @@
     </div>
 </div>
 
-<!-- Modal -->
+<!-- modal -->
 <div class="modal fade" id="jobModal" tabindex="-1" aria-labelledby="jobModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="jobModalLabel">Category Details</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <h4 id="jobTitle"></h4>
-        <p><strong>Jobs available:</strong> <span id="jobCount"></span></p>
-        <p><strong>Listing Previews:</strong></p>
-        <ul id="jobList"></ul>
-        <button class="btn btn-primary mt-4">View All</button>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="jobModalLabel">Category Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h4 id="jobTitle"></h4>
+          <p><strong>Jobs available:</strong> <span id="jobCount"></span></p>
+          <p><strong>Listing Previews:</strong></p>
+          <ul id="jobList"></ul>
+          <a href="{{ url_for('matches') }}" class="btn btn-primary mt-4">View All</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
